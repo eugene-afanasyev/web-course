@@ -7,5 +7,6 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', 'MainController@index');
 Route::get('/categories', 'MainController@categories');
-Route::get('/mobiles/iphone', 'MainController@product');
+Route::get('/{category}', 'MainController@category');
+Route::get('/mobiles/{product}', 'MainController@product');
 
