@@ -13,7 +13,7 @@ class DropProductsTable extends Migration
      */
     public function up()
     {
-        Schema::drop('products');
+        Schema::dropIfExists('products');
     }
 
     /**

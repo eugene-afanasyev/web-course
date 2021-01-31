@@ -30,27 +30,29 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create();
 
         Category::truncate();
-        createCategories();
+        Category::factory(6)->create();
 
         \App\Models\Product::truncate();
-        \App\Models\Product::factory(100)->create();
+        \App\Models\Product::factory(50)->create();
     }
-}
 
-function createCategories() {
-    for ($i = 1; $i <= 16; $i++) {
-        $category = new Category;
+    private function createCategories()
+    {
+        for ($i = 1; $i <= 10; $i++) {
+            $category = new Category;
 
-        $faker = \Faker\Factory::create();
-        $category->name = 'category' . $i;
-        if ($i <= 2) {
-            $category->parent_id = 0;
-        } else if ($i <= 6) {
-            $category->parent_id = rand(1, 2);
-        } else {
-            $category->parent_id = rand(3, 6);
+            $faker = \Faker\Factory::create();
+            $category->name = 'category' . $faker->firstNameMale;
+            if ($i <= 2) {
+                $category->parent_id = 0;
+            } else if ($i <= 6) {
+                $category->parent_id = rand(1, 2);
+            } else {
+                $category->parent_id = rand(7, 10);
+            }
+            $category->image = $faker->imageUrl($width = 240, $height = 160, 'technics');
+            $category->description = $faker->text(50);
+            $category->save();
         }
-        $category->image_src = $faker->imageUrl($width = 240, $height = 160, 'abstract');
-        $category->save();
     }
 }

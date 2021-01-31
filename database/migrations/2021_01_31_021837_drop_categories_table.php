@@ -13,7 +13,7 @@ class DropCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::drop('categories');
+        Schema::dropIfExists('categories');
     }
 
     /**

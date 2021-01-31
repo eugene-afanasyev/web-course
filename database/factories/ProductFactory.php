@@ -22,15 +22,14 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
-        $cat_id = rand(7, 12);
+        $cat_id = rand(1, Category::all()->count());
         return [
             'title' => $this->faker->name,
-            'brand' => $this->faker->company,
-            'vendor' => 'АРТ. ' . $this->faker->isbn10,
-            'image_path' => $this->faker->imageUrl($width = 240, $height = 160, 'abstract'),
+            'code' => $this->faker->numberBetween(0, 1000000),
+            'description' => $this->faker->text(),
+            'image' => $this->faker->imageUrl($width = 240, $height = 160, 'technics'),
             'price' => $this->faker->biasedNumberBetween($min = 1000, $max = 10000),
-            'category' => Category::where('id', $cat_id)->get()->first()->name,
-            'category_id' => Category::where('id', $cat_id)->get()->first()
+            'category_id' => $cat_id
         ];
     }
 }
