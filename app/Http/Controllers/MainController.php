@@ -19,7 +19,7 @@ class MainController extends Controller
     }
 
     public function category($category) {
-        dump($category);
+        return view('category', compact('category'));
     }
 
 
