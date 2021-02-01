@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ba0f96e-3862-4748-a675-ac79627c3607" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_114954_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_115252_create_order_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_01_083228_update_order_product_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product_card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_card.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +199,8 @@
       <workItem from="1605606080729" duration="4669000" />
       <workItem from="1605758045265" duration="5393000" />
       <workItem from="1607657119668" duration="2862000" />
-      <workItem from="1612093696101" duration="6375000" />
+      <workItem from="1612093696101" duration="6703000" />
+      <workItem from="1612163590448" duration="4521000" />
     </task>
     <task id="LOCAL-00001" summary="defined project layout">
       <created>1612022143223</created>
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612078300172</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added basket">
+      <created>1612106690672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612106690672</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +260,7 @@
     <MESSAGE value="changed categories.blade" />
     <MESSAGE value="removed absolute paths in blade files" />
     <MESSAGE value="first task seems done" />
-    <option name="LAST_COMMIT_MESSAGE" value="first task seems done" />
+    <MESSAGE value="added basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basket" />
   </component>
 </project>
