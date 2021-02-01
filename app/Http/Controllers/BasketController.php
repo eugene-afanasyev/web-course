@@ -12,6 +12,8 @@ class BasketController extends Controller
         $orderId = session('orderId');
         if (!is_null($orderId)) {
             $order = Order::find($orderId);
+        } else {
+            $order = Order::create();
         }
         return view('basket', compact('order'));
     }
