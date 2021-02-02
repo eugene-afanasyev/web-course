@@ -3,9 +3,9 @@
 @section('title', 'Basket')
 
 @section('content')
-<div class="starter-template">
-    <h1>Basket</h1>
-    <p>Checkout</p>
+<div class="container">
+    <h1 class="text-center" style="margin: 20px">Basket</h1>
+    <p class="text-center" style="font-size: 20px">Checkout</p>
     <div class="panel">
         <table class="table table-striped">
             <thead>
@@ -20,21 +20,28 @@
             @foreach($order->products as $product)
                 <tr>
                     <td>
-                        <a href={{ route('product', [$product->category->code, $product->code]) }}>
-                            <img height="56px" src={{ $product->image }}>
+                        <a class="h4" style="margin: 5px" href={{ route('product', [$product->category->code, $product->code]) }}>
+                            <img height="128px" src={{ $product->image }}>
                             {{ $product->title }}
                         </a>
                     </td>
-                    <td><span class="badge"> {{ $product->pivot->count }} </span>
+                    <td>
+                        <span class="badge badge-pill badge-info" style="font-size: 18px">
+                            {{ $product->pivot->count }}
+                        </span>
                         <div class="btn-group">
-                            <form action="{{ route('basket-remove', $product) }}" method="POST">
-                                <button type="submit" class="btn btn-danger"><span
-                                        class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                            <form action="{{ route('basket-remove', $product) }}" method="POST" >
+                                <button type="submit" class="btn btn-danger" aria-label="Left Align">
+                                    <span class="input-group-addon"
+                                          style="font-size: medium; font-weight: bold">-</span>
+                                </button>
                                 @csrf
                             </form>
                             <form action="{{ route('basket-add', $product) }}" method="POST">
-                                <button type="submit" class="btn btn-success"><span
-                                        class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                                <button type="submit" class="btn btn-success">
+                                    <span class="input-group-addon"
+                                          style="font-size: medium; font-weight: bold">+</span>
+                                </button>
                                 @csrf
                             </form>
                         </div>
@@ -43,14 +50,16 @@
                     <td> {{ $product->getPriceForCount($product->pivot->count) }} $</td>
                 </tr>
             @endforeach
-            <tr>
-                <td colspan="3">The total cost:</td>
-                <td>{{ $order->getFullPrice() }} $</td>
-            </tr>
+
             </tbody>
+
         </table>
         <br>
-        <div class="btn-group pull-right" role="group">
+        <div class="row">
+            <h2 style="font-weight: bold; margin-left: 20px; margin-right: 10px">The total cost:</h2>
+            <span class="badge badge-light text-center" style="font-size: 18px; padding: 10px"> {{ $order->getFullPrice() }} $ </span>
+        </div>
+        <div class="btn-group float-right" role="group">
             <a type="button" class="btn btn-success" href="http://laravel-diplom-1.rdavydov.ru/basket/place">Checkout</a>
         </div>
     </div>

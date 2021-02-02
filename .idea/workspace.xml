@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ba0f96e-3862-4748-a675-ac79627c3607" name="Default Changelist" comment="" />
+    <list default="true" id="8ba0f96e-3862-4748-a675-ac79627c3607" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,7 +213,7 @@
       <workItem from="1607657119668" duration="2862000" />
       <workItem from="1612093696101" duration="6703000" />
       <workItem from="1612163590448" duration="4521000" />
-      <workItem from="1612261926472" duration="8556000" />
+      <workItem from="1612261926472" duration="10456000" />
     </task>
     <task id="LOCAL-00001" summary="defined project layout">
       <created>1612022143223</created>
@@ -261,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612274945979</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some style and markdown fixes in app and index views">
+      <created>1612275526482</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612275526482</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +297,7 @@
     <MESSAGE value="added basket" />
     <MESSAGE value="added registration and authorization" />
     <MESSAGE value="some style and markdown fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some style and markdown fixes" />
+    <MESSAGE value="some style and markdown fixes in app and index views" />
+    <option name="LAST_COMMIT_MESSAGE" value="some style and markdown fixes in app and index views" />
   </component>
 </project>
