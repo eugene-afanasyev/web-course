@@ -21,32 +21,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-{{--<nav class="navbar navbar-inverse navbar-fixed-top">--}}
-{{--    <div class="container">--}}
-{{--        <div class="navbar-header">--}}
-{{--            <a class="navbar-brand" href="{{ route('index') }}">Интернет Магазин</a>--}}
-{{--        </div>--}}
-{{--        <div id="navbar" class="collapse navbar-collapse">--}}
-{{--            <ul class="nav navbar-nav">--}}
-{{--                <li><a href="{{ route('index') }}">Все товары</a></li>--}}
-{{--                <li ><a href="{{ route('categories') }}">Категории</a></li>--}}
-{{--                <li ><a href="{{ route('basket') }}">В корзину</a></li>--}}
-{{--                <li><a href="/reset">Сбросить проект в начальное состояние</a></li>--}}
-{{--            </ul>--}}
-
-{{--            <ul class="nav navbar-nav navbar-right">--}}
-{{--                @guest--}}
-{{--                    <li><a href="{{ route('login') }}">Sign in</a></li>--}}
-{{--                    <li><a href="{{ route('register') }}">Sign up</a></li>--}}
-{{--                @endguest--}}
-
-{{--                @auth--}}
-{{--                    <li><a href="{{ route('logout') }}">Logout</a></li>--}}
-{{--                @endauth--}}
-{{--            </ul>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</nav>--}}
 <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container-fluid">
@@ -60,9 +34,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('index') }}">Все товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('categories') }}">Категории</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('basket') }}">В корзину</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('index') }}">All goods</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('categories') }}">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('basket') }}">To basket</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -101,9 +75,10 @@
         </div>
     </nav>
 
-    <main class="container">
-        @yield('content')
-    </main>
+<div class="container-fluid">
+    @yield('content')
+</div>
+
 </div>
 </div>
 </body>
