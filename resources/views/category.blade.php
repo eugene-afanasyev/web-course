@@ -3,10 +3,10 @@
 @section('title', $category->name)
 
 @section('content')
-    <div class="starter-template">
+    <div class="container-fluid">
+        <h1 class="text-center" style="margin: 20px">{{$category->name}}</h1>
+        <p class="text-center" style="font-size: 20px">{{$category->description}}</p>
         <div class="row">
-            <h1>{{$category->name}}</h1>
-            <p>{{$category->description}}</p>
             @foreach($category->products as $product)
                 @include('product_card', compact('product'))
             @endforeach

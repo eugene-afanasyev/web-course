@@ -1,5 +1,5 @@
 <div class="card" style="width: 18rem; margin: 5px">
-    <img class="card-img-top" src={{ $product->image }}>
+    <img class="card-img-top" style="border-radius: 5px" src={{ $product->image }}>
     <div class="card-body">
         <h3 class="card-title">{{ $product->title }}</h3>
         <h4 class="card-title">{{  $product->category->name}}</h4>
