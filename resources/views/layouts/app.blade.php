@@ -22,7 +22,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url('/') }}">
                 E-shop
@@ -31,7 +31,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarText">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ route('index') }}">All goods</a></li>

@@ -3,7 +3,7 @@
 @section('title', 'e-commerce')
 
 @section('content')
-<h1 class="h1">All Goods</h1>
+<h1 class="text-center" style="margin: 20px">All Goods</h1>
 <div class="row">
     @foreach($products as $product)
         @include('product_card', compact('product'))
