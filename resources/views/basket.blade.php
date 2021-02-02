@@ -1,19 +1,19 @@
-@extends('master')
+@extends('layouts.app')
 
 @section('title', 'Basket')
 
 @section('content')
 <div class="starter-template">
-    <h1>Корзина</h1>
-    <p>Оформление заказа</p>
+    <h1>Basket</h1>
+    <p>Checkout</p>
     <div class="panel">
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>Название</th>
-                <th>Кол-во</th>
-                <th>Цена</th>
-                <th>Стоимость</th>
+                <th>Title</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>The cost</th>
             </tr>
             </thead>
             <tbody>
@@ -44,14 +44,14 @@
                 </tr>
             @endforeach
             <tr>
-                <td colspan="3">Общая стоимость:</td>
+                <td colspan="3">The total cost:</td>
                 <td>{{ $order->getFullPrice() }} $</td>
             </tr>
             </tbody>
         </table>
         <br>
         <div class="btn-group pull-right" role="group">
-            <a type="button" class="btn btn-success" href="http://laravel-diplom-1.rdavydov.ru/basket/place">Оформить заказ</a>
+            <a type="button" class="btn btn-success" href="http://laravel-diplom-1.rdavydov.ru/basket/place">Checkout</a>
         </div>
     </div>
 </div>
